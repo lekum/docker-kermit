@@ -13,7 +13,10 @@ docker build -t kermit .
 Attach the calculator to the computer.
 
 ```
-docker run --device=/dev/ttyUSB0 --rm -ti kermit
+docker run -v $PWD:/opt/kermit --device=/dev/ttyUSB0 --rm -ti kermit
 ```
 
 If the device is different than `/dev/ttyUSB0`, change the `.kermrc` file and build the image again. Then, run the container with the appropriate device.
+
+The directory mapping allow exchange of files from/to the computer.
+
