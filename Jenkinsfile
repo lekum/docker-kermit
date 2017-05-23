@@ -1,5 +1,5 @@
 stage('build') {
-	node('docker') {
+	node {
 		sh "ls"
 	}
 }
