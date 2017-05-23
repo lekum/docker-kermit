@@ -1,5 +1,5 @@
 stage('build') {
 	node {
-		sh "ls"
+		sh "ls -l"
 	}
 }
